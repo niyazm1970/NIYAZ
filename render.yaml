@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: banknifty-sniper-server
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    plan: free
+    region: oregon
+    ports:
+      - port: 10000
+        protocol: http
