@@ -1,9 +1,10 @@
 flask
 gunicorn
 platform==1.0.8
-numpy==1.24.3
-scipy==1.10.1
-matplotlib==3.7.1
-scikit-learn==1.2.2
-tensorflow==2.12.0
-keras==2.12.0
+numpy==1.23.5
+matplotlib==3.6.2
+scipy==1.9.3
+scikit-learn==1.2.0
+tensorflow==2.11.0
+keras==2.11.0
+opencv-python==4.6.0.66
