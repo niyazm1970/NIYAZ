@@ -1,13 +1,12 @@
-import requests
 from flask import Flask, request, jsonify
+import requests
 
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 10 * 1024  # 10KB limit
 
-TELEGRAM_TOKEN = '8475148547:AAGb6GoNeF0tzNoLCiJZe6bTL-kwIxczoIc'
-CHAT_ID = '627052152'  # Your confirmed Telegram User ID
+TELEGRAM_TOKEN = "8475148547:AAGb6GoNeF0tzNoLCiJZe6bTL-kwIxczoIc"
+CHAT_ID = "6278653252"
 
-@app.route('/webhook', methods=['POST'])
+@app.route("/webhook", methods=["POST"])
 def webhook():
     try:
         data = request.get_json(force=True)
@@ -23,6 +22,6 @@ def webhook():
         print("Webhook error:", str(e))
         return jsonify({"error": str(e)}), 500
 
-@app.route('/')
+@app.route("/")
 def home():
     return "BANKNIFTY sniper server is live!"
