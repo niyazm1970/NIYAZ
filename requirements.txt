@@ -1,9 +1,10 @@
 flask
 gunicorn
 platform==1.0.8
-pytz==2022.7.1
-numpy==1.24.2
-matplotlib==3.7.1
-scikit-learn==1.2.2
-tensorflow==2.12.0
-keras==2.12.0
+grpcio==1.32.0
+numpy==1.19.2
+scikit-learn==0.23.2
+nni==2.0
+ruamel.yaml==0.16.12
+schema==0.7.3
+scipy==1.5.2
