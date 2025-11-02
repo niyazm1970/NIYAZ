@@ -3,8 +3,8 @@ services:
     name: banknifty-sniper-server
     env: python
     buildCommand: pip install -r requirements.txt
-  startCommand: gunicorn app:app --bind 0.0.0.0:10000
- plan: free
+    startCommand: gunicorn app:app --bind 0.0.0.0:10000
+    plan: free
     region: oregon
     ports:
       - port: 10000
